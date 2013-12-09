@@ -9,5 +9,5 @@ function seq = demodulate( y, ts, t0, t1 )
     seq0 = sum(reshape(x0 .* y, ts, length(y) / ts));
     seq1 = sum(reshape(x1 .* y, ts, length(y) / ts));
     
-    seq = abs(seq0) < abs(seq1)
+    seq = abs(seq0) < abs(seq1);
 end

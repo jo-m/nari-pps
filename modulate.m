@@ -7,5 +7,5 @@ function y = modulate( seq, ts, t0, t1 )
     
     y = (seq1 .* f1) + (~seq1 .* f0);
     
-    plot(y)
+    %plot(y)
 end
