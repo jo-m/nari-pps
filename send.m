@@ -1,6 +1,4 @@
-function modulated = send( data )
-    repenc = 10;
-
+function modulated = send( data, repenc )
     seq = addkeys(data);
     enc = repencode(seq, repenc);
 
