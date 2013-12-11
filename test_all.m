@@ -24,11 +24,14 @@ stop(ar);
 recv = getaudiodata(ar);
 recv = recv';
 
-%figure(1)
-%subplot(2,1,1)
-%plot(tosend)
-%subplot(2,1,2)
-%plot(recv)
+length(tosend)
+length(recv)
+
+figure(1)
+subplot(2,1,1)
+plot(tosend)
+subplot(2,1,2)
+plot(recv)
 
 dataout = receive(recv, repenc);
 
